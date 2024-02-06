@@ -1,3 +1,5 @@
+using Data.Models.Users;
+
 namespace Data.Models.Addresses;
 
 public class Address
@@ -12,4 +14,6 @@ public class Address
     public virtual RegionType RegionType { get; set; }
     public virtual SettlementType SettlementType { get; set; }
     public virtual StreetType StreetType { get; set; }
+    
+    public virtual ICollection<UserAccount> UserAccounts { get; set; }
 }

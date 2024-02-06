@@ -1,6 +1,6 @@
 namespace Data.Models.Devices;
 
-public class Indications
+public class Indication
 {
     public int Id { get; set; }
     public DateTime Date { get; set; }

@@ -6,4 +6,5 @@ public class ServiceProvider
     public string CompanyName { get; set; }
     public string Phone { get; set; }
     public string Address { get; set; }
+    public virtual ICollection<Service> Services { get; set; }
 }
